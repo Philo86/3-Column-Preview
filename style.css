@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 60%;
+  background-color: hsl(0, 0%, 95%);
+}
+.container {
+  display: grid;
+  height: 70%;
+  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+}
+.orange {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px ;
+  border-bottom-left-radius: 10px ;
+}
+.container .orange div{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    color: hsl(31, 77%, 52%);
+    padding: 15px;
+    width: 120px;
+}
+.container .orange div:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+.blue {
+  background-color: hsl(184, 100%, 22%);
+}
+.container .blue div{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    color: hsl(184, 100%, 22%);
+    padding: 15px;
+    width: 120px;
+}
+.container .blue div:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+.green {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px ;
+  border-bottom-right-radius: 10px ;
+}
+.container .green div{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    color: hsl(179, 100%, 13%);
+    padding: 15px;
+    width: 120px;
+}
+.container .green div:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    cursor:pointer;
+}
+h1{
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 30px;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 30px;
+    font-size: 15px;
+    margin-bottom: 40px;
+    height: 50%;
+}
+.container div{
+    padding: 40px;
+}
+img{
+    margin-bottom: 30px;
+}
+
+@media (max-width: 500px){
+    body{
+        height: 300vh;
+    }
+    .container{
+        grid-template-columns: auto;
+    }
+    .orange {
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 10px ;
+        border-bottom-left-radius: 0 ;
+        border-top-right-radius: 10px ;
+      }
+    .green {
+        border-bottom-left-radius: 10px ;
+        border-bottom-right-radius: 10px ;
+        border-top-right-radius: 0 ;
+      }
+}
